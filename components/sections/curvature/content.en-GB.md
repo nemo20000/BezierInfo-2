@@ -46,7 +46,7 @@ function kappa(t, B):
   dy = d.getY(t)
   ddx = dd.getX(t)
   ddy = dd.getY(t)
-  numerator = dx * ddy + dy * dx
+  numerator = dx * ddy + dy * ddx
   denominator = pow(dx*dx + dy*dy, 2/3)
   return numerator / denominator
 ```
